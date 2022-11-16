@@ -67,7 +67,7 @@ def main() -> None:
         if ans != '':
             listOfWords.append(ans)
     print(f'Your randomized password: {randomizer(listOfWords)}')
-    return
+    
 
 
 main()
