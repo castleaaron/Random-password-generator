@@ -64,6 +64,7 @@ class Password:
         listOfWords = []#List of words to run through the randomizer
         while ans != '':
             ans = input('Please enter a word for your randomized password or simply click return to be finished: ')
+            ans = ans.replace(' ', '')
             if ans != '':
                 listOfWords.append(ans)
         print(f'Your randomized password: {self.randomizer(listOfWords)}')
